@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int n1=0,n2=1,a,i,n;
+	printf("Enter till: ");
+	scanf("%d",&n);
+	printf("%d\t%d\t",n1,n2);
+	for(i=1;i<n-1;i++)
+	{
+		a=n1+n2;
+		printf("%d\t",a);
+		n1=n2;
+		n2=a;
+		
+	}
+	return 0;
+}
